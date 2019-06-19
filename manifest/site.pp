@@ -1,4 +1,4 @@
-node default {
+node 'agentvm' {
   file{'/root/README':
     ensure => file,
     content => 'This is a readme',
