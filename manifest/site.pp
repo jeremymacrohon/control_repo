@@ -1,6 +1,9 @@
 node 'agentvm' {
-  file{'README':
-    ensure => file,
-    content => 'This is a readme',
-  }
-}
+     package { 'httpd':
+         ensure  => "installed",
+     }
+     service { 'httpd':
+         ensure => running,
+     enable => true
+     }
+ }
