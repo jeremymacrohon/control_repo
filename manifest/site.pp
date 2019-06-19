@@ -1,5 +1,5 @@
 node 'agentvm' {
-  file{'/root/README':
+  file{'README':
     ensure => file,
     content => 'This is a readme',
   }
